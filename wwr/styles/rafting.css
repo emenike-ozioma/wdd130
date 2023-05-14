@@ -20,6 +20,37 @@
     --nav-hover-background-color: #020202;
 }
 
+body {
+    max-width: 840px;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 145px 7fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
+header img {
+    margin: 0 0.25rem 0 1rem;
+    width: 150px;
+}
+
+header nav {
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+
+header nav a {
+    flex: 1 1 100%;
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    padding: 10px;
+}
 .hero img {
     position: relative;
     display: block;
@@ -27,15 +58,13 @@
     height: auto;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 33%;
-    right: 35%;
-    color: white;
-    background: black;
-    font-size: 30px;
-    opacity: 0.40;
-    font-weight: lighter;
+h1 {
+    display: flex;
+    text-align: center;
+    width: 127%;
+    border: #626C66 solid 5px;
+    background: #626C66;
+    justify-content: center;
 }
 
 .happyclient img {
@@ -55,6 +84,7 @@ article p {
 article {
     position: absolute;
     width: 60%;
+    max-height: 50%;
     background-color: lightskyblue;
     opacity: 0.70;
     padding-left: 30px;
@@ -62,4 +92,41 @@ article {
     padding-bottom: 0%;
     top: 250px;
     left: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.history p {
+    padding: 1rem;
+}
+
+.history img {
+    width: 170px;
+}
+
+section {
+    border: #020202 solid 0.2px;
+    margin-top: 20px;
+    padding: 14px;
+}
+
+section img {
+    width: 90%;
+    padding: 10px;
+}
+
+section div {
+    display: flex;
+    text-align: center;
+}
+
+footer {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 75% 8rem 0rem;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 80%;
 }
