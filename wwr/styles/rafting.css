@@ -20,14 +20,20 @@
     --nav-hover-background-color: #020202;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 header {
     margin: 1rem auto;
     display: grid;
-    grid-template-columns: 145px 7fr 1fr;
+    grid-template-columns: 140px 7fr 1fr;
     align-items: center;
     border-bottom: 1px solid #ccc;
     max-width: 1000px;
@@ -81,6 +87,56 @@ form {
     grid-gap: 1rem;
     background-color: #eee;
     border: #333 solid 1px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    width: 100%;
+}
+.book-a-trip {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    top: 11rem;
+    left: 60%;
+    width: 40%;
+    background-color: navy;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 9px;
+    text-decoration: solid;
+}
+.book-a-trip:hover{
+    background-color: lightskyblue;
+}
+input {
+    width: 40%;
+    height: 30px;
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+.homepage-form {
+    background-color: #eee;
     border-radius: 5px;
     padding: 1rem;
 }
@@ -168,9 +224,26 @@ h2 {
 }
 
 section {
-    border: #020202 solid 0.2px;
     margin-top: 20px;
-    padding: 14px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    background-color: #eee;
+    text-align: center;
+}
+section a {
+    text-decoration: solid;
+    background-color: navy;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .7rem;
+    font-size: .8rem;
+}
+section a:hover{
+    background-color: skyblue;
+    color: #333;
+}
+section p {
+    margin: 20px;
 }
 
 section img {
@@ -182,11 +255,30 @@ section div {
     display: flex;
     text-align: center;
 }
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    margin : 1.5rem;
+    padding-top: 10px;
+}
+aside {
+    margin: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    width: auto;
+    word-spacing: 2px;
+}
 
 footer {
     margin: 1rem;
     display: grid;
-    grid-template-columns: 75% 8rem 0rem;
+    grid-template-columns: 90% 7.4rem 0rem;
     text-align: center;
     margin-top: 20px;
     max-width: 80%;
